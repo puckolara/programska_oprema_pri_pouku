@@ -1,0 +1,113 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[slovene]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+
+\geometry{margin=1.8cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[enumerate]{leftmargin=*,itemsep=0pt,topsep=0pt,parsep=0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small Matematika}
+\rhead{\small Preizkus znanja: kombinatorika}
+\cfoot{\thepage}
+
+\newenvironment{taskbox}[1]{%
+    \par\addvspace{8pt}%
+    \noindent\textbf{\large #1}\par
+}{\par\addvspace{4pt}}
+\newcommand{\work}[1]{\par\vspace{#1}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\textbf{Preizkus znanja: Kombinatorika}}\\[4pt]
+    {\large Čas pisanja: 60 minut \qquad Skupaj: 40 točk}
+\end{center}
+
+\textbf{Ime in priimek:} \rule{8cm}{0.4pt}
+\hfill
+\textbf{Datum:} \rule{3cm}{0.4pt}
+
+\smallskip
+\textbf{Navodila:} Pri vsaki nalogi zapiši postopek in račun.
+Rezultat brez ustreznega postopka lahko prinese manj točk.
+Pri nalogah si lahko pomagate s kalkulatorjem. 
+
+\begin{taskbox}{1. \hfill 10 točk}
+\begin{enumerate}[label=\alph*)]
+    \item Na plavalnem tekmovanju je 11 tekmovalcev. Na koliko načinov se lahko razdelijo
+    zlata, srebrna in bronasta mesta? Vsak tekmovalec lahko zasede največ eno mesto.
+    \hfill (4 t)
+    \work{7cm}
+    \item Sestavljamo petmestno številčno geslo (PIN) iz števk
+    \(0,1,\ldots,9\). Števke se lahko ponavljajo in začetna števka je lahko 0.
+    Koliko različnih PIN-kod je mogoče sestaviti? Utemelji račun. \hfill (6 t)
+    \work{7cm}
+\end{enumerate}
+\end{taskbox}
+
+\clearpage
+\begin{taskbox}{2. \hfill 5 točk}
+\begin{enumerate}[label=\alph*)]
+    \item V slaščičarni lahko izberemo eno od 4 sadnih ali eno od 3 čokoladnih
+    sladic. Koliko različnih sladic lahko izberemo? \hfill (2 t)
+    \work{7cm}
+    \item Za malico izberemo enega od 4 sendvičev in eno od 3 pijač. Nariši
+    kombinatorično drevo ter zapiši število različnih malic. \hfill (3 t)
+    \work{7cm}
+\end{enumerate}
+\end{taskbox}
+
+\clearpage
+\begin{taskbox}{3. \hfill 7 točk}
+\begin{enumerate}[label=\alph*)]
+    \item Iz črk besede \textsc{triglav} sestavljamo nove besede. Vsakič
+    uporabimo vse črke natanko enkrat. Koliko je takih besed, v katerih vsi
+    soglasniki stojijo skupaj?     \hfill (3 t)
+    \work{10cm}
+    \item Koliko različnih nizov lahko sestavimo s preurejanjem vseh črk besede
+    \textsc{kaktus}? \hfill (4 t)
+    \work{7cm}
+\end{enumerate}
+\end{taskbox}
+
+\clearpage
+\begin{taskbox}{4. \hfill 9 točk}
+\begin{enumerate}[label=\alph*)]
+    \item Razvij \((2x+3)^4\) v vsoto enočlenikov. \hfill (5 t)
+    \work{7cm}
+    \item Z uporabo formule za \((k+1)\)-ti člen določi tretji člen razvoja
+    \((x-2)^8\). Pokaži, kako določiš \(k\). \hfill (4 t)
+    \work{7cm}
+\end{enumerate}
+\end{taskbox}
+
+\clearpage
+\begin{taskbox}{5. \hfill 9 točk}
+V skupini je 9 fantov in 7 deklet.
+\begin{enumerate}[label=\alph*)]
+    \item Izberemo petčlansko ekipo, v kateri sta natanko 2 dekleti. Na koliko
+    načinov jo lahko izberemo? \hfill (5 t)
+    \work{7cm}
+    \item Izberemo štiričlansko skupino, v kateri je vsaj eno dekle. Na koliko
+    načinov jo lahko izberemo? \hfill (4 t)
+    \work{2.5cm}
+\end{enumerate}
+\end{taskbox}
+
+\vfill
+\begin{center}
+    \textbf{Preden oddaš:} preveri, ali si pri vsaki nalogi upošteval vrstni red
+    in možnost ponavljanja.
+\end{center}
+
+\end{document}
