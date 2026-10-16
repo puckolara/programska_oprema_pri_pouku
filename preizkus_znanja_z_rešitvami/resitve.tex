@@ -13,8 +13,10 @@
 
 \geometry{margin=1.8cm}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt}
-\setlist[enumerate]{leftmargin=*,itemsep=0pt,topsep=0pt,parsep=0pt}
+\setlength{\parskip}{2pt}
+\definecolor{navy}{HTML}{174A7E}
+\definecolor{pale}{HTML}{EEF4F8}
+\setlist[enumerate]{leftmargin=*,itemsep=5pt,topsep=2pt,parsep=2pt}
 \pagestyle{fancy}
 \fancyhf{}
 \lhead{\small Matematika}
@@ -22,9 +24,13 @@
 \cfoot{\thepage}
 
 \newenvironment{taskbox}[1]{%
-    \par\addvspace{8pt}%
+    \par\addvspace{24pt}%
     \noindent\textbf{\large #1}\par
-}{\par\addvspace{4pt}}
+}{\par\addvspace{16pt}}
+\newcommand{\rubric}[1]{%
+    \par\smallskip\noindent
+    {\small\textcolor{navy}{\textbf{Točkovanje:} #1}}%
+    \par\smallskip}
 
 \begin{document}
 
@@ -40,16 +46,16 @@
     \[
         V_{11}^3=11\cdot10\cdot9=\boxed{990}.
     \]
-    (1 t: prepoznava variacij brez ponavljanja, 2 t: pravilen produkt,
-    1 t: rezultat)
+    \rubric{1 t: prepoznava variacij brez ponavljanja, 2 t: pravilen produkt,
+    1 t: rezultat}
     \item Vsako od petih mest PIN-kode lahko zasede katerakoli od 10 števk.
     Ponavljanje je dovoljeno, zato je število kod:
     \[
         10^5=\boxed{100\,000}.
     \]
-    (1 t: 10 možnosti na mesto, 2 t: upoštevanje vseh petih mest in
+    \rubric{1 t: 10 možnosti na mesto, 2 t: upoštevanje vseh petih mest in
     ponavljanja, 1 t: upoštevanje možnosti začetne ničle, 1 t: zapis potence,
-    1 t: rezultat)
+    1 t: rezultat}
 \end{enumerate}
 \end{taskbox}
 
@@ -85,28 +91,36 @@ uporabimo pravilo vsote:
 \[
     3\cdot2\cdot3+4\cdot2=18+8=\boxed{26}.
 \]
-(2 t: pravilno kombinatorično drevo za sendvič meni, 1 t: število toplih
-menijev in sendvič menijev, 1 t: uporaba pravila vsote, 1 t: rezultat)
+\rubric{2 t: pravilno kombinatorično drevo za sendvič meni, 1 t: število toplih
+menijev in sendvič menijev, 1 t: uporaba pravila vsote, 1 t: rezultat}
 \end{taskbox}
 
 \begin{taskbox}{3. \hfill 7 točk \quad (predvideno: 11 min)}
 \begin{enumerate}[label=\alph*)]
-    \item Pet soglasnikov obravnavamo kot en blok. Skupaj z dvema
-    samoglasnikoma lahko razporedimo 3 enote na \(3!\) načinov, soglasnike
-    znotraj bloka pa na \(5!\) načinov:
+    \item Beseda \textsc{triglav} ima 7 različnih črk, zato jih lahko
+    preuredimo na
+    \[
+        7!=\boxed{5040}
+    \]
+    načinov.
+
+    Če morajo soglasniki stati skupaj, jih obravnavamo kot en blok. Skupaj
+    z dvema samoglasnikoma lahko razporedimo 3 enote na \(3!\) načinov,
+    soglasnike znotraj bloka pa na \(5!\) načinov:
     \[
         3!\cdot5!=6\cdot120=\boxed{720}.
     \]
-    (1 t: združitev soglasnikov v blok, 1 t: razporeditev bloka in
-    samoglasnikov ter soglasnikov znotraj bloka, 1 t: rezultat)
+    \rubric{3a.i: 1 t za pravilen izračun in rezultat; 3a.ii: 1 t za združitev
+    soglasnikov v blok in razporeditev 3 enot, 1 t za razporeditev
+    soglasnikov znotraj bloka, 1 t za pravilen zmnožek in rezultat}
     \item Beseda \textsc{kaktus} ima 6 črk, pri čemer se K ponovi dvakrat.
     Če bi črki K razlikovali, bi bilo \(6!\) razporeditev; zamenjava enakih
     črk K pa ne ustvari novega niza, zato delimo z \(2!\):
     \[
         \frac{6!}{2!}=\frac{720}{2}=\boxed{360}.
     \]
-    (1 t: \(6!\), 1 t: imenovalec \(2!\), 1 t: pravilna formula,
-    1 t: rezultat)
+    \rubric{1 t: \(6!\), 1 t: deljenje z \(2!\) zaradi enakih črk in pravilna
+    formula, 1 t: rezultat}
 \end{enumerate}
 \end{taskbox}
 
@@ -119,8 +133,8 @@ menijev in sendvič menijev, 1 t: uporaba pravila vsote, 1 t: rezultat)
         +4(2x)\cdot3^3+3^4
         =\boxed{16x^4+96x^3+216x^2+216x+81}.
     \]
-    (1 t: koeficienti, 1 t: pravilno zapisani členi razvoja, 1 t: potence
-    členov, 1 t: pravilna vstavitev, 1 t: pravilen rezultat)
+    \rubric{1 t: koeficienti, 1 t: pravilno zapisani členi razvoja, 1 t: potence
+    členov, 1 t: pravilna vstavitev, 1 t: pravilen rezultat}
     \item Za tretji člen velja \(k+1=3\), zato je \(k=2\). V formuli
     \(T_{k+1}=\binom{n}{k}a^{n-k}b^k\) vstavimo \(n=8\), \(a=x\),
     \(b=-2\):
@@ -129,8 +143,8 @@ menijev in sendvič menijev, 1 t: uporaba pravila vsote, 1 t: rezultat)
         =28\cdot x^6\cdot4
         =\boxed{112x^6}.
     \]
-    (1 t: \(k=2\), 1 t: pravilna formula, 1 t: vstavljene vrednosti,
-    1 t: rezultat)
+    \rubric{1 t: \(k=2\), 1 t: pravilna formula, 1 t: vstavljene vrednosti,
+    1 t: rezultat}
 \end{enumerate}
 \end{taskbox}
 
@@ -142,8 +156,8 @@ V skupini je 9 fantov in 7 deklet.
     \[
         \binom{7}{2}\binom{9}{3}=21\cdot84=\boxed{1764}.
     \]
-    (1 t: uporaba kombinacij, 1 t: pravilna postavitev, 1 t: vrednosti
-    binomskih koeficientov, 1 t: zmnožek, 1 t: rezultat)
+    \rubric{1 t: uporaba kombinacij, 1 t: pravilna postavitev, 1 t: vrednosti
+    binomskih koeficientov, 1 t: zmnožek, 1 t: rezultat}
     \item Preštejemo vse štiričlanske skupine iz iste skupine in odštejemo
     tiste brez deklet (torej skupine štirih fantov):
     \[
@@ -151,8 +165,8 @@ V skupini je 9 fantov in 7 deklet.
         =1820-126
         =\boxed{1694}.
     \]
-    (1 t: uporaba komplementa, 1 t: \(\binom{16}{4}\), 1 t:
-    \(\binom{9}{4}\), 1 t: odštevanje in rezultat)
+    \rubric{1 t: uporaba komplementa, 1 t: \(\binom{16}{4}\), 1 t:
+    \(\binom{9}{4}\), 1 t: odštevanje in rezultat}
 
     Drugi način: ločeno preštejemo skupine z 1, 2, 3 ali 4 dekleti:
     \[
@@ -163,10 +177,10 @@ V skupini je 9 fantov in 7 deklet.
         =588+756+315+35
         =\boxed{1694}.
     \]
-    (1 t: pravilno zajeti primeri z 1, 2, 3 ali 4 dekleti, 1 t: pravilno
+    \rubric{1 t: pravilno zajeti primeri z 1, 2, 3 ali 4 dekleti, 1 t: pravilno
     zapisani produkti kombinacij, 1 t: seštevanje delnih rezultatov,
     1 t: rezultat. Za nalogo 5b se prizna največ 4 točke; točkovanja za
-    različna načina se ne seštevata.)
+    različna načina se ne seštevata.}
 \end{enumerate}
 \end{taskbox}
 
