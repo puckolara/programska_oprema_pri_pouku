@@ -33,7 +33,7 @@
     {\large Preizkus znanja: Kombinatorika \qquad 40 točk}
 \end{center}
 
-\begin{taskbox}{1. \hfill 10 točk \quad (priporočeno: 13 min)}
+\begin{taskbox}{1. \hfill 10 točk \quad (predvideno: 13 min)}
 \begin{enumerate}[label=\alph*)]
     \item Medalje so različne, zato je vrstni red pomemben; tekmovalec pa ne
     more dobiti več medalj. Gre za variacije brez ponavljanja:
@@ -53,45 +53,43 @@
 \end{enumerate}
 \end{taskbox}
 
-\begin{taskbox}{2. \hfill 5 točk \quad (priporočeno: 7 min)}
-\begin{enumerate}[label=\alph*)]
-    \item Izberemo sadno \textbf{ali} čokoladno sladico, zato uporabimo pravilo
-    vsote: \(4+3=\boxed{7}\) sladic. (2 t: pravilno pravilo 1 t, rezultat 1 t)
-    \item Drevo ima najprej 4 veje za sendviče, vsaka s 3 vejami za pijače.
-    \begin{center}
-    \begin{tikzpicture}[
-        grow=right,
-        level distance=2.5cm,
-        level 1/.style={sibling distance=1.2cm},
-        level 2/.style={sibling distance=0.3cm},
-        every node/.style={font=\scriptsize,anchor=west},
-        edge from parent/.style={draw}
-    ]
-    \node {Malica}
-        child {node {Sendvič 1}
-            child {node {Pijača 1}}
-            child {node {Pijača 2}}
-            child {node {Pijača 3}}}
-        child {node {Sendvič 2}
-            child {node {Pijača 1}}
-            child {node {Pijača 2}}
-            child {node {Pijača 3}}}
-        child {node {Sendvič 3}
-            child {node {Pijača 1}}
-            child {node {Pijača 2}}
-            child {node {Pijača 3}}}
-        child {node {Sendvič 4}
-            child {node {Pijača 1}}
-            child {node {Pijača 2}}
-            child {node {Pijača 3}}};
-    \end{tikzpicture}
-    \end{center}
-    Drevo ima \(4\cdot3=\boxed{12}\) listov, torej 12 različnih malic.
-    (2 t: pravilno drevo, 1 t: izračun)
-\end{enumerate}
+\begin{taskbox}{2. \hfill 5 točk \quad (predvideno: 7 min)}
+Kombinatorično drevo za sendvič meni:
+\begin{center}
+\begin{tikzpicture}[
+grow=right,
+level distance=2.7cm,
+level 1/.style={sibling distance=0.75cm},
+level 2/.style={sibling distance=0.35cm},
+every node/.style={font=\scriptsize,anchor=west},
+edge from parent/.style={draw}
+]
+\node {Sendvič meni}
+child {node {Sendvič 1}
+    child {node {Pijača 1}}
+    child {node {Pijača 2}}}
+child {node {Sendvič 2}
+    child {node {Pijača 1}}
+    child {node {Pijača 2}}}
+child {node {Sendvič 3}
+    child {node {Pijača 1}}
+    child {node {Pijača 2}}}
+child {node {Sendvič 4}
+    child {node {Pijača 1}}
+    child {node {Pijača 2}}};
+\end{tikzpicture}
+\end{center}
+Topli meni ponuja \(3\cdot2\cdot3=18\) možnosti, sendvič meni pa
+\(4\cdot2=8\). Ker izbiramo topli meni \textbf{ali} sendvič meni,
+uporabimo pravilo vsote:
+\[
+    3\cdot2\cdot3+4\cdot2=18+8=\boxed{26}.
+\]
+(2 t: pravilno kombinatorično drevo za sendvič meni, 1 t: število toplih
+menijev in sendvič menijev, 1 t: uporaba pravila vsote, 1 t: rezultat)
 \end{taskbox}
 
-\begin{taskbox}{3. \hfill 7 točk \quad (priporočeno: 11 min)}
+\begin{taskbox}{3. \hfill 7 točk \quad (predvideno: 11 min)}
 \begin{enumerate}[label=\alph*)]
     \item Pet soglasnikov obravnavamo kot en blok. Skupaj z dvema
     samoglasnikoma lahko razporedimo 3 enote na \(3!\) načinov, soglasnike
@@ -112,8 +110,7 @@
 \end{enumerate}
 \end{taskbox}
 
-\clearpage
-\begin{taskbox}{4. \hfill 9 točk \quad (priporočeno: 15 min)}
+\begin{taskbox}{4. \hfill 9 točk \quad (predvideno: 15 min)}
 \begin{enumerate}[label=\alph*)]
     \item Koeficienti pri četrti potenci so \(1,4,6,4,1\):
     \[
@@ -137,7 +134,7 @@
 \end{enumerate}
 \end{taskbox}
 
-\begin{taskbox}{5. \hfill 9 točk \quad (priporočeno: 14 min)}
+\begin{taskbox}{5. \hfill 9 točk \quad (predvideno: 14 min)}
 V skupini je 9 fantov in 7 deklet.
 \begin{enumerate}[label=\alph*)]
     \item Vrstni red izbire ni pomemben. Izberemo 2 od 7 deklet in 3 od 9
